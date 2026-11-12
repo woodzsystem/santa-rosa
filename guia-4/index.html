@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panadería Santa Rosa | Pan caliente todos los días</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/pedido.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><strong>Panadería Santa Rosa</strong></p>
+    <nav>
+      <ul>
+        <li><a href="../index.html">← Guías</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Pan caliente desde 1987</h1>
+      <p>Somos una panadería familiar. Horneamos cada madrugada con recetas de tres generaciones.</p>
+    </section>
+
+    <section id="productos">
+      <h2>Nuestros productos</h2>
+      <div class="catalogo">
+        <article class="producto" data-nombre="Pan de yema" data-precio="0.50">
+          <img src="img/pan-yema.jpg" alt="Canasta de panes de yema dorados recién horneados">
+          <h3>Pan de yema</h3>
+          <p><span class="precio">S/ 0.50</span> la unidad</p>
+          <button type="button" class="btn-anadir">Añadir</button>
+        </article>
+        <article class="producto" data-nombre="Pan francés" data-precio="0.30">
+          <h3>Pan francés</h3>
+          <p><span class="precio">S/ 0.30</span> la unidad</p>
+          <button type="button" class="btn-anadir">Añadir</button>
+        </article>
+        <article class="producto" data-nombre="Chancay" data-precio="0.60">
+          <h3>Chancay</h3>
+          <p><span class="precio">S/ 0.60</span> la unidad</p>
+          <button type="button" class="btn-anadir">Añadir</button>
+        </article>
+        <article class="producto" data-nombre="Torta de chocolate" data-precio="45.00">
+          <img src="img/tortas.jpg" alt="Torta de chocolate de dos pisos decorada con fresas">
+          <h3>Torta de chocolate</h3>
+          <p><span class="precio">S/ 45.00</span> entera</p>
+          <button type="button" class="btn-anadir">Añadir</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="mi-pedido" aria-labelledby="titulo-pedido">
+      <h2 id="titulo-pedido" tabindex="-1">Mi pedido</h2>
+      <p id="pedido-vacio">Tu pedido está vacío. Añade productos del catálogo.</p>
+      <ul id="lista-pedido"></ul>
+      <div id="sugerencia-honesta" hidden>
+        <p>¿Añadir mantequilla artesanal por S/ 2.50? <button type="button" id="btn-mantequilla">Añadir mantequilla</button></p>
+      </div>
+      <p class="total">Total: <strong id="total">S/ 0.00</strong></p>
+      <button type="button" id="btn-vaciar" class="btn-quitar" hidden>Vaciar pedido</button>
+      <p id="aviso" class="solo-lector" role="status"></p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <h2>Visítanos</h2>
+    <p>Lunes a sábado de 6:00 a 21:00 · Domingos de 6:00 a 13:00</p>
+  </footer>
+</body>
+</html>
